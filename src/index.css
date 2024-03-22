@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  --custom-bg: white;
+  --custom-section01-bg: rgba(161, 161, 170, 20);
+  
+}
+html[class="dark"] {
+  --custom-section01-bg: rgba(75, 85, 99, 50);
+  --custom-bg: #111;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--custom-bg) !important;
+}
+
+#container__section01{
+  background-image: linear-gradient(174deg, var(--custom-section01-bg) 70%, var(--custom-bg) calc(70% + 1px));
+  background-color: var(--custom-bg);
+
+}
+#container__section03{
+  background: var(--custom-section01-bg) ;
+}
+#container__section03 main{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#text-container__page-header a:hover{
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+#text-container__page-header a:is(.dark .dark\:hover\:text-white:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
