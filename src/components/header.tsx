@@ -1,6 +1,5 @@
 import { Navbar } from 'flowbite-react';
 import { DarkThemeToggle, Flowbite } from 'flowbite-react';
-import "../styles/header.css"
 
 export function PageHeader () {
 

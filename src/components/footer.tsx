@@ -1,4 +1,3 @@
-import "../styles/footer.css"
 import { Footer } from 'flowbite-react';
 import { BsGithub } from 'react-icons/bs';
 export function PageFooter () {

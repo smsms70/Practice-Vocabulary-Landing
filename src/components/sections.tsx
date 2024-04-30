@@ -1,4 +1,3 @@
-import "../styles/sections.css";
 import { Carousel } from 'flowbite-react';
 
 export function Section01 () {
